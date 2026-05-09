@@ -59,30 +59,7 @@ PRODUCT_PACKAGES += \
     init.insmod.sh \
 
 PRODUCT_PACKAGES += \
-    fstab.mt6761 \
-    factory_init.connectivity.common.rc \
-    factory_init.connectivity.rc \
-    factory_init.project.rc \
-    factory_init.rc \
-    init.aee.rc \
-    init.ago.rc \
-    init.cgroup.rc \
-    init.connectivity.common.rc \
-    init.connectivity.rc \
-    init.modem.rc \
-    init.mt6761.rc \
-    init.mt6761.usb.rc \
-    init.project.rc \
-    init.sensor_1_0.rc \
-    init_connectivity.rc \
-    meta_init.connectivity.common.rc \
-    meta_init.connectivity.rc \
-    meta_init.modem.rc \
-    meta_init.project.rc \
-    meta_init.rc \
-    meta_init.vendor.rc \
-    multi_init.rc \
-    init.recovery.mt6761.rc \
+    fstab.mt6761
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.mt6761:$(TARGET_VENDOR_RAMDISK_OUT)/first_stage_ramdisk/fstab.mt6761
