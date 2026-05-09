@@ -90,6 +90,3 @@ PRODUCT_COPY_FILES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
-
-# Inherit the proprietary files
-$(call inherit-product, vendor/xiaomi/ice/ice-vendor.mk)
