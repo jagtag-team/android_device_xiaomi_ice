@@ -1,4 +1,4 @@
-# Android device tree for Redmi missi (missi)
+# Android device tree for Redmi ice (ice)
 
 ```
 #

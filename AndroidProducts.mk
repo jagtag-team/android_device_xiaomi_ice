@@ -4,9 +4,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_missi.mk
+    $(LOCAL_DIR)/lineage_ice.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_missi-user \
-    lineage_missi-userdebug \
-    lineage_missi-eng
+    lineage_ice-user \
+    lineage_ice-userdebug \
+    lineage_ice-eng

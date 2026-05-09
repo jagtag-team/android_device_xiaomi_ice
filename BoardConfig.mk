@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/xiaomi/missi
+DEVICE_PATH := device/xiaomi/ice
 
 # A/B
 AB_OTA_UPDATER := true
@@ -45,8 +45,8 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_KERNEL_SEPARATED_DTBO := true
-TARGET_KERNEL_CONFIG := missi_defconfig
-TARGET_KERNEL_SOURCE := kernel/xiaomi/missi
+TARGET_KERNEL_CONFIG := ice_defconfig
+TARGET_KERNEL_SOURCE := kernel/xiaomi/ice
 
 # Kernel - prebuilt
 TARGET_FORCE_PREBUILT_KERNEL := true
@@ -100,4 +100,4 @@ BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Inherit the proprietary files
-include vendor/xiaomi/missi/BoardConfigVendor.mk
+include vendor/xiaomi/ice/BoardConfigVendor.mk
