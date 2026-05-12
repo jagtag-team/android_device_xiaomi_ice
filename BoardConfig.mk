@@ -105,3 +105,6 @@ TARGET_COPY_OUT_SYSTEM := system
 TARGET_COPY_OUT_SYSTEM_EXT := system/system_ext
 BUILD_WITHOUT_VENDOR := true
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+
+# Ignore overriding commands errors
+BUILD_BROKEN_DUP_RULES := true
