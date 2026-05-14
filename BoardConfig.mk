@@ -38,6 +38,7 @@ TARGET_SCREEN_DENSITY := 320
 
 # Kernel
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32S1,32S1
+BOARD_KERNEL_CMDLINE += androidboot.hardware=mt6761
 BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
 BOARD_BOOT_HEADER_VERSION := 2
 BOARD_KERNEL_IMAGE_NAME := Image
