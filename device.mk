@@ -72,6 +72,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/init.recovery.usb.rc:recovery/root/init.recovery.usb.rc \
     $(LOCAL_PATH)/rootdir/ueventd.mt6761.rc:recovery/root/ueventd.mt6761.rc \
     $(LOCAL_PATH)/rootdir/first_stage_ramdisk/fstab.mt6761:recovery/root/first_stage_ramdisk/fstab.mt6761 \
-    $(LOCAL_PATH)/recovery/root/vendor/firmware/focaltech_ts_fw_helitai.bin:recovery/root/vendor/firmware/focaltech_ts_fw_helitai.bin \
-    $(LOCAL_PATH)/recovery/root/vendor/firmware/novatek_ts_truly_fw.bin:recovery/root/vendor/firmware/novatek_ts_truly_fw.bin \
-    $(LOCAL_PATH)/recovery/root/vendor/firmware/novatek_ts_truly_mp.bin:recovery/root/vendor/firmware/novatek_ts_truly_mp.bin
+    $(LOCAL_PATH)/recovery/root/system/vendor/firmware/focaltech_ts_fw_helitai.bin:recovery/root/system/vendor/firmware/focaltech_ts_fw_helitai.bin \
+    $(LOCAL_PATH)/recovery/root/system/vendor/firmware/novatek_ts_truly_fw.bin:recovery/root/system/vendor/firmware/novatek_ts_truly_fw.bin \
+    $(LOCAL_PATH)/recovery/root/system/vendor/firmware/novatek_ts_truly_mp.bin:recovery/root/system/vendor/firmware/novatek_ts_truly_mp.bin
