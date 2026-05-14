@@ -77,3 +77,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/recovery/root/system/vendor/firmware/focaltech_ts_fw_helitai.bin:recovery/root/system/vendor/firmware/focaltech_ts_fw_helitai.bin \
     $(LOCAL_PATH)/recovery/root/system/vendor/firmware/novatek_ts_truly_fw.bin:recovery/root/system/vendor/firmware/novatek_ts_truly_fw.bin \
     $(LOCAL_PATH)/recovery/root/system/vendor/firmware/novatek_ts_truly_mp.bin:recovery/root/system/vendor/firmware/novatek_ts_truly_mp.bin
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/recovery/root/system/etc/init/snapuserd.rc:recovery/root/system/etc/init/snapuserd.rc
+PRODUCT_PACKAGES += \
+    snapuserd \
+    snapuserd.recovery
