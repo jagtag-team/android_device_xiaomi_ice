@@ -7,6 +7,9 @@ on early-init
     start adbd
     start snapuserd
 
+on fs
+    mount ext4 /dev/block/platform/bootdevice/by-name/md_udc /metadata noatime,nosuid,nodev,discard
+
 on boot
     setprop sys.usb.config adb
 
