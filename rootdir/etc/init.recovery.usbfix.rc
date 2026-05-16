@@ -6,8 +6,12 @@ on boot
     setprop service.adb.root 1
     setprop sys.usb.config adb
 
-    # Force common backlight nodes so recovery UI is visible.
-    exec -- /system/bin/sh -c 'for p in /sys/class/backlight/*/bl_power; do [ -e "$$p" ] && echo 0 > "$$p"; done; for p in /sys/class/backlight/*/brightness /sys/class/leds/*backlight*/brightness /sys/class/leds/lcd-backlight/brightness; do [ -e "$$p" ] && echo 180 > "$$p"; done'
+    # Force common backlight nodes so recovery UI is visible
+    # Enable backlight power and set maximum brightness (2046 for MT6761 lcd-backlight)
+    exec -- /system/bin/sh -c 'for p in /sys/class/backlight/*/bl_power; do [ -e "$$p" ] && echo 0 > "$$p" 2>/dev/null; done'
+    exec -- /system/bin/sh -c 'for p in /sys/class/backlight/*/brightness /sys/class/leds/*backlight*/brightness; do [ -e "$$p" ] && echo 255 > "$$p" 2>/dev/null; done'
+    # MT6761 specific: set lcd-backlight to maximum (2046)
+    write /sys/class/leds/lcd-backlight/brightness 2046
 
 on property:ro.boot.usbcontroller=*
     setprop sys.usb.controller ${ro.boot.usbcontroller}
