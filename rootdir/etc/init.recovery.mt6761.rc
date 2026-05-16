@@ -5,10 +5,10 @@ on init
 
 on early-init
     start adbd
+    start snapuserd
 
 on boot
     setprop sys.usb.config adb
-    start snapuserd
 
 on post-fs
     # Support A/B feature for emmc boot region
