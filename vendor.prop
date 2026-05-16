@@ -37,6 +37,10 @@ ro.telephony.iwlan_operation_mode=AP-assisted
 ro.telephony.sim.count=2
 telephony.active_modems.max_count=2
 
+# Battery/Power
+ro.vendor.mtk_battery_ok=1
+persist.vendor.mtk_battery_ok=1
+
 # Miscellaneous
 dalvik.vm.foreground-heap-growth-multiplier=2.0
 dalvik.vm.heapgrowthlimit=128m

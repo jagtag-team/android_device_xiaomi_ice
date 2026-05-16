@@ -25,6 +25,8 @@ on early-init
     write /sys/devices/platform/10012000.dvfsrc/helio-dvfsrc/dvfsrc_req_ddr_opp 0
     mount debugfs debugfs /sys/kernel/debug
     chmod 0755 /sys/kernel/debug
+    # Skip battery validation during first boot to avoid automatic shutdown on corrupted data
+    setprop sys.mtk_battery_ok 1
 
 on init
     write /proc/bootprof "INIT:init"
