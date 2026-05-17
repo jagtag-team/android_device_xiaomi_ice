@@ -61,7 +61,7 @@ PRODUCT_PACKAGES += \
     fstab.mt6761
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/recovery/root/first_stage_ramdisk/fstab.mt6761:$(TARGET_VENDOR_RAMDISK_OUT)/first_stage_ramdisk/fstab.mt6761
+    $(LOCAL_PATH)/rootdir/first_stage_ramdisk/fstab.mt6761:$(TARGET_VENDOR_RAMDISK_OUT)/first_stage_ramdisk/fstab.mt6761
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
@@ -69,8 +69,8 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/recovery/root/init.recovery.mt6761.rc:recovery/root/init.recovery.mt6761.rc \
-    $(LOCAL_PATH)/recovery/root/init.recovery.usb.rc:recovery/root/init.recovery.usb.rc \
-    $(LOCAL_PATH)/recovery/root/init.recovery.usbfix.rc:recovery/root/system/etc/init/init.recovery.usbfix.rc \
+    $(LOCAL_PATH)/rootdir/init.recovery.usb.rc:recovery/root/init.recovery.usb.rc \
+    $(LOCAL_PATH)/rootdir/etc/init.recovery.usbfix.rc:recovery/root/system/etc/init/init.recovery.usbfix.rc \
     $(LOCAL_PATH)/rootdir/ueventd.mt6761.rc:recovery/root/ueventd.mt6761.rc \
     $(LOCAL_PATH)/recovery/root/system/vendor/firmware/focaltech_ts_fw_helitai.bin:recovery/root/system/vendor/firmware/focaltech_ts_fw_helitai.bin \
     $(LOCAL_PATH)/recovery/root/system/vendor/firmware/novatek_ts_truly_fw.bin:recovery/root/system/vendor/firmware/novatek_ts_truly_fw.bin \
