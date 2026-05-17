@@ -99,13 +99,5 @@ BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
 # VINTF
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
-# Treble
-BOARD_VNDK_VERSION := current
-TARGET_COPY_OUT_PRODUCT := product
-TARGET_COPY_OUT_SYSTEM := system
-TARGET_COPY_OUT_SYSTEM_EXT := system/system_ext
-BUILD_WITHOUT_VENDOR := true
-BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
-
-# Ignore overriding commands errors
-BUILD_BROKEN_DUP_RULES := true
+# Inherit the proprietary files
+include vendor/xiaomi/ice/BoardConfigVendor.mk
