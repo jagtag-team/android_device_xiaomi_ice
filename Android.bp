@@ -5,11 +5,3 @@
 
 soong_namespace {
 }
-
-// Override to make libcodec2_hidl_plugin_headers available to media APEX
-cc_library_headers {
-    name: "libcodec2_hidl_plugin_headers",
-    apex_available: [
-        "com.android.media.swcodec",
-    ],
-}
